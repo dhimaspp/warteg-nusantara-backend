@@ -1,0 +1,9 @@
+Django==3.0.10
+django-filter
+djangorestframework
+djangorestframework-jsonapi
+django-cors-headers
+gunicorn==20.0.4
+psycopg2-binary==2.8.6
+
+
