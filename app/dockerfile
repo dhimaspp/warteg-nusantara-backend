@@ -10,8 +10,9 @@ ENV PYTHONUNBUFFERED 1
 
 # install psycopg2 dependencies
 RUN apk update \
-    && apk add postgresql-dev gcc python3-dev musl-dev libffi-dev openssl-dev
+    && apk add postgresql-dev gcc python3-dev musl-dev libffi-dev openssl-dev jpeg-dev zlib-dev
 
+ENV LIBRARY_PATH=/lib:/usr/lib
 # install dependencies
 RUN pip install --upgrade pip
 COPY ./requirements.txt .
