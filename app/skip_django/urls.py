@@ -23,6 +23,7 @@ from upload.views import image_upload
 
 urlpatterns = [
     url(r'^', include('users.urls')),
+    url(r'^', include('warteg_nusantara.urls')),
     path("admin/", admin.site.urls),
 ]
 

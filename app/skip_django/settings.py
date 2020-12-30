@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'users',
     'corsheaders',
     'upload',
+    'warteg_nusantara',
 ]
 
 MIDDLEWARE = [
